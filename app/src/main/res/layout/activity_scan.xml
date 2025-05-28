@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="25dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="15dp"
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/voiceapp" />
+        <!-- 타이틀 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="사용자 정보 등록"
+            android:textSize="28sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="25dp"/>
+
+        <!-- 사용자 이름 입력 -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#000000"
+            android:layout_marginBottom="15dp">
+
+            <EditText
+                android:id="@+id/et_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="60dp"
+                android:padding="15dp"
+                android:hint="이름 입력"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:autofillHints="name"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:backgroundTint="#000080"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- 사용자 나이 입력 -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#000000"
+            android:layout_marginBottom="15dp">
+
+            <EditText
+                android:id="@+id/et_user_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="60dp"
+                android:padding="15dp"
+                android:hint="나이 입력"
+                android:inputType="number"
+                android:autofillHints="birthdayDay"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:backgroundTint="#000080"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- 성별 선택 (RadioGroup으로 변경) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="성별 선택"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+
+            <RadioButton
+                android:id="@+id/radio_button_male"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="남"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:buttonTint="#000080"
+                android:minHeight="48dp"
+                android:padding="8dp"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_female"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="여"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:buttonTint="#000080"
+                android:minHeight="48dp"
+                android:padding="8dp"/>
+        </RadioGroup>
+
+        <!-- 사용자 신장 입력 -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#000000"
+            android:layout_marginBottom="25dp">
+
+            <EditText
+                android:id="@+id/et_user_Height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="60dp"
+                android:padding="15dp"
+                android:hint="신장(키) 입력 (cm)"
+                android:inputType="number"
+                android:autofillHints="height"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:backgroundTint="#000080"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- 사용자 신장 입력 -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#000000"
+            android:layout_marginBottom="25dp">
+
+            <EditText
+                android:id="@+id/et_user_Weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="60dp"
+                android:padding="15dp"
+                android:hint="몸무게 입력 (kg)"
+                android:inputType="number"
+                android:autofillHints="height"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:backgroundTint="#000080"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- 뒤로 가기 및 저장 버튼 (가로 정렬) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:padding="10dp">
+
+            <!-- 뒤로 가기 버튼 (왼쪽) -->
+
+            <!-- 저장 버튼 (오른쪽) -->
+            <Button
+                android:id="@+id/btn_go_back"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#000000"
+                android:minHeight="60dp"
+                android:padding="16dp"
+                android:text="뒤로가기"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_save_user"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="저장"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:backgroundTint="#006400"
+                android:textColor="#FFFFFF"
+                android:padding="16dp"
+                android:minHeight="60dp"
+                android:layout_marginStart="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

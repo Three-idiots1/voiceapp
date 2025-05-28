@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#FFFFFF">
+
+    <!-- 앱 상단 제목 -->
+    <TextView
+        android:id="@+id/tv_auto_mode_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="수동 모드"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="15dp"
+        android:background="#000080"/>
+
+    <!-- Button
+        android:id="@+id/btnConnect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="블루투스 연결"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="#4285F4"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/-->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/voiceapp" />
+
+    <!-- 상단 부위 선택 버튼들 (어깨, 등, 허리 3개) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:padding="12dp">
+
+        <Button
+            android:id="@+id/btn_shoulder"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="어깨"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:backgroundTint="#000000"
+            android:textColor="#FFFFFF"
+            android:padding="15dp"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="등"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:backgroundTint="#000000"
+            android:textColor="#FFFFFF"
+            android:padding="15dp"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/btn_waist"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="허리"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:backgroundTint="#000000"
+            android:textColor="#FFFFFF"
+            android:padding="15dp"
+            android:layout_margin="8dp"/>
+    </LinearLayout>
+
+    <!-- 중앙 여백 추가 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:layout_margin="20dp" />
+
+    <!-- 남은 시간 표시 -->
+    <TextView
+        android:id="@+id/tv_remaining_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="남은 시간: 없음"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000080"
+        android:gravity="center"
+        android:layout_marginBottom="50dp"/>
+
+</LinearLayout>

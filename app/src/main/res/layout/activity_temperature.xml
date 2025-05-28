@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#FFFFFF"
+    tools:context=".TemperatureActivity">
+
+    <!-- 앱 상단 제목 -->
+    <TextView
+        android:id="@+id/tv_auto_mode_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="온도 설정"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="15dp"
+        android:background="#000080"/>
+
+    <TextView
+        android:id="@+id/tv_current_temperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="현재 설정 온도: --°C"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:src="@drawable/voiceapp" />
+
+    <SeekBar
+        android:id="@+id/seekbar_temperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:max="30"
+        android:minHeight="20dp"
+        android:progress="20"
+        android:progressTint="#000080"
+        android:thumbTint="#000080" />
+
+    <TextView
+        android:id="@+id/tv_temperature_range"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="30°C                                                  60°C"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginBottom="35dp" />
+
+    <Button
+        android:id="@+id/btn_set_temperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="온도 설정하기"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:backgroundTint="#006400"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="뒤로 가기"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:backgroundTint="#000000"
+        android:padding="16dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_marginTop="35dp" />
+</LinearLayout>
