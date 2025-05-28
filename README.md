@@ -1,16 +1,28 @@
 # [아이편해] 대구가톨릭대학교 캡스톤디자인 과제
-## 
-&nbsp; ''
-<div align=center> 
+
+## 🛏️ 아이편해 - 사용자 맞춤 스마트 지압 침대 시스템
+'아이편해'는 노약자와 일반 사용자를 위한 **맞춤형 지압 및 온도 조절 기능**을 제공하는 스마트 침대 시스템입니다.  
+AI 기반 음성인식 기능과 사용자 데이터를 활용한 건강관리 서비스를 통해  
+**편리하고 건강한 수면 환경**을 목표로 합니다.
+
+<div align=center>
+
+| 기능 | 설명 |
+|------|------|
+| 🗣️ 음성 제어 | STT/TTS 기술로 리모컨 없이 간편한 제어 |
+| 🔥 지압/온도 조절 | 신체 부위별 맞춤형 지압 및 온도 조절 |
+| 📊 BMI 기반 개인화 | 사용자 DB를 바탕으로 맞춤 기능 제공 |
+| 📡 블루투스 연동 | 컨트롤러와 침대 간 무선 통신 구현 |
 
 </div>
 
+### 🎬 아이편해 설명 영상
+[![아이편해 설명 영상](http://img.youtube.com/vi/go0379rRv80/0.jpg)](https://www.youtube.com/watch?v=go0379rRv80)
+
+
 ## 🗒️목차
 - [프로젝트 소개](#프로젝트-소개)
-  - [기능 설명](#⚙기능-설명)
-  - [화면 설명](#화면-설명)
-  - [API 설명](#API-설명)
-- [아쉬웠던 부분](#아쉬웠던-부분)
+- [😥 아쉬웠던 부분](#😥-아쉬웠던-부분)
 
 ## 💻프로젝트 소개
 **프로젝트 이름**: 아이편해
@@ -47,25 +59,29 @@
   <img src="https://img.shields.io/badge/restapi-000000?style=for-the-badge&logo=api&logoColor=white">
 </div>
 
-### 메인 제공 기능
+### 🧩 메인 제공 기능
 
-<div align=center> 
-|메인 화면|자동 모드|수동 모드|온도 모드|BMI|
-|--------|--------|--------|--------|--------|
-|<img src="https://github.com/jamonda1/DCUgraduate_project/blob/main/images/%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%92%E1%85%AA%E1%84%86%E1%85%A7%E1%86%AB.png?raw=true" width="170"/>|<img src="https://github.com/jamonda1/DCUgraduate_project/blob/main/images/%E1%84%8B%E1%85%B5%E1%86%AF%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%8E%E1%85%AE%E1%84%80%E1%85%A1%E1%84%92%E1%85%AA%E1%84%86%E1%85%A7%E1%86%AB.png?raw=true" width="170"/>|<img src="https://github.com/jamonda1/DCUgraduate_project/blob/main/images/AI%E1%84%8B%E1%85%B5%E1%86%AF%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%8C%E1%85%A1%E1%86%A8%E1%84%89%E1%85%A5%E1%86%BC.png?raw=true" width="170"/>|<img src="https://github.com/jamonda1/DCUgraduate_project/blob/main/images/%E1%84%91%E1%85%A9%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%E1%84%89%E1%85%A6%E1%86%BA%E1%84%8B%E1%85%A5%E1%86%B8%E1%84%8B%E1%85%A6%E1%84%89%E1%85%A1%E1%84%8C%E1%85%B5%E1%86%AB%E1%84%8E%E1%85%AE%E1%84%80%E1%85%A1.png?raw=true" width="170"/>|<img src="https://github.com/jamonda1/DCUgraduate_project/blob/main/images/AI%E1%84%80%E1%85%A6%E1%84%89%E1%85%B5%E1%84%80%E1%85%B3%E1%86%AF.png?raw=true" width="170"/>|
-|간단한 일정과 게시글 확인|시작 시간과 종료 시간을 입력|장소를 입력한 후 추천 받기|사진과 제목, 키워드를 입력|버튼을 통해 AI 초안 받기|
+<div align="center">
+
+| 메인 화면 | 자동 모드 | 수동 모드 | 온도 모드 | BMI |
+|:--:|:--:|:--:|:--:|:--:|
+| <img src="https://github.com/Three-idiots1/voiceapp/blob/master/images/%EB%A9%94%EC%9D%B8%20%ED%99%94%EB%A9%B4.png?raw=true" width="170"/> | <img src="https://github.com/Three-idiots1/voiceapp/blob/master/images/%EC%9E%90%EB%8F%99%20%EB%AA%A8%EB%93%9C.png?raw=true" width="170"/> | <img src="https://github.com/Three-idiots1/voiceapp/blob/master/images/%EC%88%98%EB%8F%99%20%EB%AA%A8%EB%93%9C.png?raw=true" width="170"/> | <img src="https://github.com/Three-idiots1/voiceapp/blob/master/images/%EC%98%A8%EB%8F%84%20%EB%AA%A8%EB%93%9C.png?raw=true" width="170"/> | <img src="https://github.com/Three-idiots1/voiceapp/blob/master/images/BMI.png?raw=true" width="170"/> |
+| 간단한 상태 확인 | 자동 시작/종료 시간 설정 | 사용자가 직접 수동 조작 | 온도 조절 및 확인 | BMI 기반 기능 제공 |
+
 </div>
 
 
-## 🔧아쉬웠던 부분
-- 
-- 
-- 
-- 
-- 
 
-[오경석]: <#>
+## 🔧 아쉬웠던 부분
+- 음성인식 기능의 정확도가 낮아, 소음 환경에서는 명령 인식률이 떨어짐
+- 블루투스 통신이 간헐적으로 끊기거나 지연되어, 실시간 제어에 어려움
+- 제한된 개발 기간으로 인해 체형 인식이나 자세 분석 같은 고급 기능은 구현 미흡
+- 지압 모듈을 실제 침대에 적용하기 위한 하드웨어 제작에 비용과 자재 한계
+- 다양한 사용자층을 대상으로 한 충분한 사용성 테스트를 진행하지 못한 점
+
+
+[오경석]: <https://github.com/kyoungseok-Oh>
 [박경운]: <https://github.com/gyngxn_>
-[이범수]: <#>
+[이범수]: <https://github.com/lbs3082>
 [김유찬]: <#>
 
