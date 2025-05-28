@@ -88,7 +88,7 @@ AI 기반 음성인식 기능과 사용자 데이터를 활용한 건강관리 �
 
 
 [오경석]: <https://github.com/kyoungseok-Oh>
-[박경운]: <https://github.com/gyngxn_>
+[박경운]: <https://github.com/gyngxn>
 [이범수]: <https://github.com/lbs3082>
 [김유찬]: <#>
 
